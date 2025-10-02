@@ -1,0 +1,40 @@
+:root{
+ --white: #eeeff1;
+ --link-color-hover: #1DB954;
+ --green: #2EE86A;
+ --black: #191414; 
+ --green-text:#40E978;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+}
+
+a{
+    text-decoration: none;
+}
+nav .right a{
+    color: var(--white);
+}
+
+nav .left a{
+    color: var(--green);
+}
+nav .right a:last-child {
+    color: var(--black);
+    background-color: var(--white);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a:hover{
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+    background-color: transparent;
+    border-radius: 0;
+}
