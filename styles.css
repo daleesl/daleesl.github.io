@@ -10,9 +10,28 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--black);
+    background-image: 
+        radial-gradient(2px 2px at 20px 20px, white, transparent),
+        radial-gradient(2px 2px at 40px 70px, white, transparent),
+        radial-gradient(1px 1px at 90px 40px, white, transparent),
+        radial-gradient(1px 1px at 130px 80px, white, transparent),
+        radial-gradient(2px 2px at 160px 30px, white, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: moveStars 20s linear infinite;
+    padding: 0 200px !important;
+}
+
+@keyframes moveStars {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 200px 0px;
+    }
 }
 
 a{
@@ -25,16 +44,20 @@ nav .right a{
 nav .left a{
     color: var(--green);
 }
-nav .right a:last-child {
-    color: var(--black);
-    background-color: var(--white);
-    padding: 5px 15px;
-    border-radius: 5px;
-}
 
 nav .right a:hover{
     color: var(--white);
     border-bottom: 2px solid var(--white);
     background-color: transparent;
     border-radius: 0;
+}
+
+nav .glass {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mx-200{
+margin: 0 200px;
 }
