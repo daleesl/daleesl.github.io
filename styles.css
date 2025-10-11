@@ -1,12 +1,20 @@
-:root{
- --white: #eeeff1;
- --link-color-hover: #1DB954;
- --green: #2EE86A;
- --black: #191414; 
- --green-text:#40E978;
+:root {
+    --white: #eeeff1;
+    --link-color-hover: #1DB954;
+    --green: #2EE86A;
+    --black: #191414;
+    --green-text: #40E978;
+    
 }
 
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
     scroll-behavior: smooth;
 
 }
@@ -14,7 +22,7 @@ html{
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--black);
-    background-image: 
+    background-image:
         radial-gradient(2px 2px at 20px 20px, white, transparent),
         radial-gradient(2px 2px at 40px 70px, white, transparent),
         radial-gradient(1px 1px at 90px 40px, white, transparent),
@@ -23,30 +31,39 @@ body {
     background-repeat: repeat;
     background-size: 200px 100px;
     animation: moveStars 20s linear infinite;
-    padding: 0 200px !important;
+    margin: 0 280px;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 @keyframes moveStars {
     0% {
         background-position: 0px 0px;
     }
+
     100% {
         background-position: 200px 0px;
     }
 }
 
-a{
+/* NAVBAR SECTION */
+a {
     text-decoration: none;
 }
-nav .right a{
+
+nav .right a {
     color: var(--white);
 }
 
-nav .left a{
+nav .left a {
     color: var(--green);
 }
 
-nav .right a:hover{
+nav .right a:hover {
     color: var(--white);
     border-bottom: 2px solid var(--white);
     background-color: transparent;
@@ -59,6 +76,66 @@ nav .glass {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.mx-200{
-margin: 0 200px;
+.mx-200 {
+    margin: 0 200px;
+}
+
+
+/* HERO SECTION */
+.hero-section {
+    margin-top: 120px;
+}
+
+.image-container {
+    width: 350px;
+    height: 350px;
+    background-color: gray;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 4px solid var(--green); */
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.location {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: .5rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--green);
+    color: var(--black);
+}
+
+.btn-outline-success {
+    border: 2px solid var(--green);
+    color: var(--green);
+    padding: 12px;
+    font-weight: 500;
+    border-radius: 25px;
+    width: 200px;
 }
