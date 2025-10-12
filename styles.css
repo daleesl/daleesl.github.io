@@ -57,15 +57,41 @@ a {
 
 nav .right a {
     color: var(--white);
+    position: relative;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav .right a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 nav .left a {
     color: var(--green);
 }
 
+nav .right a:hover::after {
+    width: 100%;
+}
+
 nav .right a:hover {
     color: var(--white);
-    border-bottom: 2px solid var(--white);
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* Active/Current section indicator */
+nav .right a.active {
+    color: var(--white);
+    border-bottom: 2px solid var(--green);
     background-color: transparent;
     border-radius: 0;
 }
@@ -76,8 +102,12 @@ nav .glass {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.mx-200 {
-    margin: 0 200px;
+
+nav .right a:link,
+nav .right a:visited,
+nav .right a:hover,
+nav .right a:active {
+    color: var(--white) !important;
 }
 
 
