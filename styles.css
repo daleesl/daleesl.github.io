@@ -88,12 +88,11 @@ nav .right a:hover {
     border-radius: 0;
 }
 
-/* Active/Current section indicator */
+/* Active/Current section indicator -- removed*/
 nav .right a.active {
     color: var(--white);
     border-bottom: 2px solid var(--green);
-    background-color: transparent;
-    border-radius: 0;
+
 }
 
 nav .glass {
