@@ -88,13 +88,6 @@ nav .right a:hover {
     border-radius: 0;
 }
 
-/* Active/Current section indicator -- removed*/
-nav .right a.active {
-    color: var(--white);
-    border-bottom: 2px solid var(--green);
-
-}
-
 nav .glass {
     background: rgba(255, 255, 255, 0.08) !important;
     backdrop-filter: blur(5px);
@@ -169,8 +162,7 @@ nav .right a:active {
     width: 200px;
 }
 
-/* RESPONSIVE DESIGN */
-/* Tablet and below */
+/* RESPONSIVE DESIGN -- MEDIA QUERIES*/
 @media (max-width: 991px) {
     body {
         margin: 0 100px;
@@ -181,7 +173,7 @@ nav .right a:active {
     }
 }
 
-/* Mobile devices */
+
 @media (max-width: 767px) {
     body {
         margin: 0 20px;
@@ -217,7 +209,7 @@ nav .right a:active {
     }
 }
 
-/* Small mobile devices */
+
 @media (max-width: 480px) {
     body {
         margin: 0 15px;
