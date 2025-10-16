@@ -162,7 +162,7 @@ nav .right a:active {
     width: 200px;
 }
 
-/* RESPONSIVE DESIGN -- MEDIA QUERIES*/
+/* RESPONSIVE DESIGN - MEDIA QUERIES*/
 @media (max-width: 991px) {
     body {
         margin: 0 100px;
