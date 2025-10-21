@@ -34,11 +34,7 @@ body {
     margin: 0 280px;
 }
 
-.main-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
+
 
 @keyframes moveStars {
     0% {
