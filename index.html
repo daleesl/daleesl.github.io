@@ -23,16 +23,15 @@
         <div class="container glass rounded-4 ps-4 mx-auto mx-md-5 mx-lg-auto">
             <div class="row w-100 align-items-center p-2 py-3">
                 <div class="col-6 col-md-4 left">
-                    <a class="fs-4 fw-bold" href="#hero-section">Dale Lee</a>
+                    <a class="fs-4 fw-bold" style="color: var(--green);" href="#hero-section">Dale Lee</a>
                 </div>
 
                 <div class="col-6 col-md-8 d-flex justify-content-end right">
                     <div class="d-none d-md-flex gap-4 align-items-center">
-                        <a class="nav-link" href="#hero-section">Home</a>
-                        <a class="nav-link" href="#aboutme-section">About</a>
-                        <a class="nav-link" href="#project-section">Projects</a>
-                        <a class="nav-link" href="#contact-section">Contacts</a>
-
+                        <a class="nav-link fw-bold" href="#hero-section">Home</a>
+                        <a class="nav-link fw-bold" href="#aboutme-section">About</a>
+                        <a class="nav-link fw-bold" href="#project-section">Projects</a>
+                        <a class="nav-link fw-bold" href="#contact-section">Contacts</a>
                     </div>
 
                     <button class="navbar-toggler d-md-none border-0" type="button" data-bs-toggle="collapse"
@@ -46,7 +45,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-block d-md-none">
                     <ul class="navbar-nav ms-auto mt-3">
-                          <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-white" href="#hero-section">Home</a>
                         </li>
                         <li class="nav-item">
@@ -65,38 +64,51 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero-section" id="hero-section">
+    <section class="hero-section mt-5 pt-4 mt-lg-5 pt-lg-5" id="hero-section">
         <div class="container">
             <div class="row mx-1 mx-md-3 mx-lg-5 align-items-center">
                 <div class="col-12 col-md-7 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-                    <div class="image-container rounded-5">
+                    <!-- Desktop and tablet image -->
+                    <div class="image-container rounded-5 d-none d-md-block" style="width: 350px; height: 350px; background-color: gray;">
+                        <img src="" alt="My Photo">
+                    </div>
+                    <!-- Mobile image -->
+                    <div class="image-container rounded-5 d-block d-md-none mx-auto" style="width: 280px; height: 280px; background-color: gray;">
                         <img src="" alt="My Photo">
                     </div>
                 </div>
 
                 <div class="col-12 col-md-5 text-center text-md-start">
                     <div class="text-white mt-3 mt-md-5 fs-4">
-                        <h1 class="mb-3">Hi, I'm <span class="text-green fw-bold">Dale Lee</span></h1>
-                        <p class="lead fw-1 mb-4">An aspiring Full Stack Developer</p>
+                        <div class="wrapper d-flex flex-column align-items-center align-items-md-start justify-content-center">
+                            <h1 class="mb-2 display-6 display-md-5 display-lg-4">Hi, I'm <span class="fw-bold" style="color: var(--green);">Dale Lee</span>
+                            </h1>
+                            <p class="lead fw-1 mb-2 fs-6 fs-md-5">An aspiring Full Stack Developer</p>
 
-                        <div
-                            class="location mb-4 d-flex justify-content-center justify-content-md-start align-items-center gap-2">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Calamba, Laguna</span>
-                        </div>
+                            <div
+                                class="location mb-2 d-flex justify-content-center justify-content-md-start align-items-center gap-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Calamba, Laguna</span>
+                            </div>
 
-                        <div class="social-icons mb-4 d-flex justify-content-center justify-content-md-start">
-                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
-                                    class="fa-regular fa-envelope"></i></a>
-                            <a href="https://github.com/daleesl" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/daleesl_/" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/daleandrewslee/" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
+                            <div class="social-icons mb-3 d-flex justify-content-center justify-content-md-start gap-2 gap-md-3">
+                                <a href="https://mail.google.com/mail/u/0/#inbox"
+                                    class="d-flex align-items-center justify-content-center rounded-4"
+                                    target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                                <a href="https://github.com/daleesl"
+                                    class="d-flex align-items-center justify-content-center rounded-4"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.instagram.com/daleesl_/"
+                                    class="d-flex align-items-center justify-content-center rounded-4"
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/daleandrewslee/"
+                                    class="d-flex align-items-center justify-content-center rounded-4"
+                                    target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="text-center text-md-start">
-                        <a href="#" class="btn btn-outline-success">Hire Me</a>
+                        <a href="#" class="btn btn-outline-success py-2 py-md-3 px-4 px-md-5 rounded-5" style="width: 200px;">Hire Me</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +142,7 @@
                 <h2>Tools and Technologies:</h2>
             </div>
 
-            <div class="tech-icons my-2">
+            <div class="tech-icons mt-3">
                 <div class="row justify-content-center g-3">
                     <div class="col-6 col-sm-4 col-md-2 d-flex justify-content-center">
                         <i class="fab fa-html5 fa-5x" title="HTML5"></i>

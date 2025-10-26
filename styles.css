@@ -22,29 +22,10 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--black);
-    background-image:
-        radial-gradient(2px 2px at 20px 20px, white, transparent),
-        radial-gradient(2px 2px at 40px 70px, white, transparent),
-        radial-gradient(1px 1px at 90px 40px, white, transparent),
-        radial-gradient(1px 1px at 130px 80px, white, transparent),
-        radial-gradient(2px 2px at 160px 30px, white, transparent);
-    background-repeat: repeat;
-    background-size: 200px 100px;
-    animation: moveStars 20s linear infinite;
     margin: 0 280px;
 }
 
 
-
-@keyframes moveStars {
-    0% {
-        background-position: 0px 0px;
-    }
-
-    100% {
-        background-position: 200px 0px;
-    }
-}
 
 /* NAVBAR SECTION */
 a {
@@ -70,18 +51,9 @@ nav .right a::after {
     transform: translateX(-50%);
 }
 
-nav .left a {
-    color: var(--green);
-}
 
 nav .right a:hover::after {
     width: 100%;
-}
-
-nav .right a:hover {
-    color: var(--white);
-    background-color: transparent;
-    border-radius: 0;
 }
 
 nav .glass {
@@ -90,7 +62,6 @@ nav .glass {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
 nav .right a:link,
 nav .right a:visited,
 nav .right a:hover,
@@ -98,16 +69,9 @@ nav .right a:active {
     color: var(--white) !important;
 }
 
-
 /* HERO SECTION */
 .hero-section {
     margin-top: 120px;
-}
-
-.image-container {
-    width: 350px;
-    height: 350px;
-    background-color: gray;
 }
 
 .image-container img {
@@ -115,31 +79,12 @@ nav .right a:active {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    /* border: 4px solid var(--green); */
-}
-
-.text-green {
-    color: var(--green);
-}
-
-.location {
-    color: var(--white);
-    font-size: 1rem;
-}
-
-.social-icons {
-    display: flex;
-    gap: .5rem;
 }
 
 .social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
     color: var(--white);
     transition: all 0.3s ease;
 }
@@ -152,80 +97,18 @@ nav .right a:active {
 .btn-outline-success {
     border: 2px solid var(--green);
     color: var(--green);
-    padding: 12px;
-    font-weight: 500;
-    border-radius: 25px;
     width: 200px;
 }
 
 /* RESPONSIVE DESIGN - MEDIA QUERIES*/
 @media (max-width: 991px) {
-    body {
-        margin: 0 100px;
-    }
-    
-    .hero-section {
-        margin-top: 100px;
-    }
+    body { margin: 0 100px; }
 }
-
 
 @media (max-width: 767px) {
-    body {
-        margin: 0 20px;
-    }
-    
-    .hero-section {
-        margin-top: 100px;
-    }
-    
-    .image-container {
-        width: 280px;
-        height: 280px;
-        margin: 0 auto;
-    }
-    
-    .hero-section h1 {
-        font-size: 2.5rem !important;
-        margin-bottom: 1rem;
-    }
-    
-    .hero-section .lead {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .social-icons {
-        gap: 1rem;
-    }
-    
-    .btn-outline-success {
-        width: 250px;
-        padding: 15px;
-    }
+    body { margin: 0 20px; }
 }
 
-
 @media (max-width: 480px) {
-    body {
-        margin: 0 15px;
-    }
-    
-    .image-container {
-        width: 220px;
-        height: 220px;
-    }
-    
-    .hero-section h1 {
-        font-size: 2rem !important;
-    }
-    
-    .hero-section .lead {
-        font-size: 1rem;
-    }
-    
-    .btn-outline-success {
-        width: 200px;
-        padding: 12px;
-    }
+    body { margin: 0 15px; }
 }
