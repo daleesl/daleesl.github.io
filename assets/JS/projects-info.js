@@ -1,4 +1,36 @@
-
+var techs=[
+    {
+        "name": "HTML5",
+        "icon": "fab fa-html5",
+        "color": "#E34F26"
+    }
+    ,
+    {
+        "name": "CSS3",
+        "icon": "fab fa-css3-alt",
+        "color": "#1572B6"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "fab fa-js",
+        "color": "#F7DF1E"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "fab fa-bootstrap",
+        "color": "#7952B3"
+    },
+    {
+        "name": "GitHub",
+        "icon": "fab fa-github",
+        "color": "#727272ff"
+    },
+    {
+        "name": "Figma",
+        "icon": "fab fa-figma",
+        "color": "#F24E1E"
+    }
+]
 var projects=[
     {
         "name": "Apple Landing Page",
@@ -21,3 +53,4 @@ var projects=[
         "link" : "https://daleesl.github.io/WD-04/"
     }
 ]
+
