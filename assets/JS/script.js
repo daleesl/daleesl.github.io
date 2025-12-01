@@ -14,6 +14,7 @@
 
                             <div class="description d-flex flex-column flex-grow-1 mt-2">
                                 <h5 class=" mt-2 fw-bold">${projects[i].name}</h5>
+                                <h6 class="text-secondary">${projects[i].activity}</h6>
                                 <p class="fs-6 flex-grow-1" style="color: #c8c4c4;">${projects[i].description}</p>
                                 <a href="${projects[i].link}"
                                     class="btn btn-dark mt-2 justify-content-center d-flex" target="_blank">View
