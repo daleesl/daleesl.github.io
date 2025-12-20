@@ -54,6 +54,14 @@ var projects=[
         "image" : "assets/images/WD-04.png",
         "link" : "https://daleesl.github.io/WD-04/",
         "activity": "WD-04"
+    },
+
+    {
+        "name" : "API Utilization",
+        "description" : "A web app that fetches and displays random user data from an external API using JavaScript.",
+        "image" : "assets/images/WD-05.png",
+        "link" : "https://daleesl.github.io/WD-05/",
+        "activity": "WD-05"
     }
 ]
 
